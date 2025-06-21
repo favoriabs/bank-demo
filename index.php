@@ -1,8 +1,9 @@
 <?php
 
-require_once 'src/BankAccount.php';
-require_once 'src/SavingsAccount.php';
-require_once 'src/CurrentAccount.php';
+require_once 'autoload.php';
+
+use App\Briqsbank\SavingsAccount;
+use App\Briqsbank\CurrentAccount;
 
 $accountOne = new SavingsAccount("0114116070", "GTB", 
                                 100000, 0.05);
